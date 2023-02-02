@@ -1,0 +1,17 @@
+package com.farmers.farm;
+
+import com.farmers.farm.entities.Animal;
+import com.farmers.farm.entities.AnimalFamily;
+import com.farmers.farm.entities.AnimalKingdom;
+import com.farmers.farm.entities.Farmer;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class FarmApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(FarmApplication.class, args);
+	}
+
+}
