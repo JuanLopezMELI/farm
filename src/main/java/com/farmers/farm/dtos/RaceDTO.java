@@ -9,4 +9,5 @@ import lombok.Setter;
 public class RaceDTO {
   private String race;
   private String scientificName;
+  private CountryDTO originCountry;
 }

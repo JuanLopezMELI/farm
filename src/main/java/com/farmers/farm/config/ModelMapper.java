@@ -4,12 +4,12 @@ import com.farmers.farm.dtos.AnimalDTO;
 import com.farmers.farm.entities.Animal;
 import com.farmers.farm.entities.AnimalFamily;
 import com.farmers.farm.entities.AnimalKingdom;
+import com.farmers.farm.entities.ContinentSubdivision;
+import com.farmers.farm.entities.Country;
 import java.util.List;
 import java.util.stream.Collectors;
 import org.modelmapper.Converter;
 import org.modelmapper.PropertyMap;
-import org.modelmapper.TypeMap;
-import org.modelmapper.spi.MappingContext;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration

@@ -4,6 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Race {
@@ -13,6 +15,17 @@ public class Race {
   private Integer id;
   private String race;
   private String scientificName;
+  @ManyToOne
+  @JoinColumn(name = "origin_country_id")
+  private Country originCountry;
+
+  public Country getOriginCountry() {
+    return originCountry;
+  }
+
+  public void setOriginCountry(Country originCountry) {
+    this.originCountry = originCountry;
+  }
 
   public Race() {}
 

@@ -24,6 +24,7 @@ public class Animal {
 
   private AnimalKingdom kingdom;
   private double weight;
+  private String photoLink;
 
   public Animal(Integer id, Farmer owner, AnimalKingdom kingdom, double weight) {
     this.id = id;
@@ -78,6 +79,15 @@ public class Animal {
 
   public Animal setRace(Race race) {
     this.race = race;
+    return this;
+  }
+
+  public String getPhotoLink() {
+    return photoLink;
+  }
+
+  public Animal setPhotoLink(String photoLink) {
+    this.photoLink = photoLink;
     return this;
   }
 }
